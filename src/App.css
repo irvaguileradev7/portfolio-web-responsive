@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  background-color:rgb(25, 23, 44);
+  font-family: Montserrat;
+}
+
+.text-shadow-header {
+  text-shadow: rgb(255, 255, 255) 1px 0 10px;
+}
+
+/* Para animacion de izquierda a derecha */
+@keyframes slide-from-left {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in-from-left {
+  animation: slide-from-left 0.5s ease-out forwards;
+}

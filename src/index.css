@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: #071018;
+    font-family: Montserrat;
+}
+
+.text-shadow-header {
+    text-shadow: rgb(255, 255, 255) 1px 0 10px;
+}
+
+.bg-plain {
+    background-color: #071018;
+    font-family: Montserrat;
+}
