@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 
 const Home: React.FC = () => {
-  const [showDelayedElement, setShowDelayedElement] = useState(false);
+  const [, setShowDelayedElement] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
