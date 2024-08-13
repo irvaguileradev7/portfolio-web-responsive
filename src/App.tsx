@@ -17,7 +17,7 @@ function App() {
 
   return (
     <Router>
-      <div className="flex flex-col min-h-screen pb-10 animate-appear"> {/* Contenedor principal */}
+      <div className="flex flex-col min-h-screen animate-appear"> {/* Contenedor principal */}
         <Navbar />
         <div className="flex-1">
           <div className="col-span-7 md-col-span-9 ">

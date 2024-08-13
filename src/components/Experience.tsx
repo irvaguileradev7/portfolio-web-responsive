@@ -3,7 +3,7 @@ const experiences = [
         id: 1,
         company: "Soluciones Integrales TecnoMTY S.A. de C.V.",
         date: "Enero - Junio 2024",
-        position: "Desarrollador Fullstack y UX/UI",
+        position: "Desarrollador web Fullstack y UX/UI",
         responsibilities: [
             "Colaboración efectiva en equipos multidisciplinarios siguiendo el marco de trabajo Scrum.",
             "Creación de mockups y prototipos interactivos utilizando Figma para validar diseños con stakeholders.",
@@ -21,9 +21,9 @@ const experiences = [
     },
     {
         id: 2,
-        company: "Grupo APD",
+        company: "APD Consultores de Software",
         date: "2023 - 2024",
-        position: "Desarrollador front end",
+        position: "Desarrollador web front end",
         responsibilities: [
             "Desarrollo de aplicaciones moviles en el framework Angular.",
             "Implementación de interfaces utilizando el framework Ionic.",
@@ -33,20 +33,26 @@ const experiences = [
     },
     {
         id: 3,
-        company: "Desarrollo de videojuego en Pixel Game Jam",
+        company: "Desarrollo de videojuegos en Pixel Game Jam",
         date: "2022",
-        position: "Desarrollador front end",
+        position: "Desarrollador de videojuegos",
         responsibilities: [
-            "Programación de scripts de movimiento e interacción con los escenarios en el lenguaje C# por medio de Unity."
-        ]
+            "Programación de scripts de movimiento e interacción con los escenarios en el lenguaje C# por medio de Unity.",
+            "Programación de animaciones de personajes.",
+            "Elaboración de niveles.",
+            "Creación de scripts de acciones de personajes."
+        ],
+        link: "https://queksmar.itch.io/one-togueter",
     }
 ];
 
 export default function Experience() {
     return (
         <div className="mx-4 md:mx-20 mt-10">
-             <div className="flex justify-center items-center mx-4 sm:mx-10 md:mx-20 mt-10">
-                <p className="text-lg sm:text-xl md:text-2xl text-white font-bold  animate-slide-in-from-left ">MI EXPERIENCIA PROFESIONAL</p>
+            <div className="flex justify-center items-center mx-4 sm:mx-10 md:mx-20 mt-10">
+                <p className="text-lg sm:text-xl md:text-2xl text-white font-bold animate-slide-in-from-left">
+                    MI EXPERIENCIA PROFESIONAL
+                </p>
             </div>
             {experiences.map(experience => (
                 <div key={experience.id} className="bg-white/20 rounded-md m-2 p-2 shadow-md animate-slide-in-from-left mb-4">
@@ -66,6 +72,19 @@ export default function Experience() {
                             ))}
                         </ul>
                     </div>
+                    {experience.link && (
+                        <div className="relative m-2 p-2 text-white">
+                            <iframe
+                                frameBorder="0"
+                                src="https://itch.io/embed/1521574"
+                                width="552"
+                                height="167"
+                                className="w-full"
+                            >
+                                <a href={experience.link}>One Together by Queksmar, zaieni, Yuriev, LilithApple</a>
+                            </iframe>
+                        </div>
+                    )}
                 </div>
             ))}
         </div>
