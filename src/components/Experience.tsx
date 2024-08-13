@@ -44,7 +44,10 @@ const experiences = [
 
 export default function Experience() {
     return (
-        <div className="ml-4 mr-4 md:mx-20 mt-10">
+        <div className="mx-4 md:mx-20 mt-10">
+             <div className="flex justify-center items-center mx-4 sm:mx-10 md:mx-20 mt-10">
+                <p className="text-lg sm:text-xl md:text-2xl text-white font-bold  animate-slide-in-from-left ">MI EXPERIENCIA PROFESIONAL</p>
+            </div>
             {experiences.map(experience => (
                 <div key={experience.id} className="bg-white/20 rounded-md m-2 p-2 shadow-md animate-slide-in-from-left mb-4">
                     <p className="relative m-2 p-2 text-white text-xl font-bold">
