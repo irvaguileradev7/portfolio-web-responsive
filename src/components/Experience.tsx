@@ -1,16 +1,22 @@
-import React from "react";
-
 const experiences = [
     {
         id: 1,
-        company: "Soluciones Integrales TecnomMTY S.A. de C.V.",
-        date: "Febrero - Junio 2024",
-        position: "Desarrollador front end",
+        company: "Soluciones Integrales TecnoMTY S.A. de C.V.",
+        date: "Enero - Junio 2024",
+        position: "Desarrollador Fullstack y UX/UI",
         responsibilities: [
-            "Trabajo colaborativo bajo el marco de trabajo Scrum.",
-            "Creación de mockups del sistema por medio de Figma.",
-            "Creación del proyecto por medio de Node.js y NPM, en el framework Front-End React.",
-            "Desarrollo de las interfaces UX/UI por medio de TailwindCSS."
+            "Colaboración efectiva en equipos multidisciplinarios siguiendo el marco de trabajo Scrum.",
+            "Creación de mockups y prototipos interactivos utilizando Figma para validar diseños con stakeholders.",
+            "Desarrollo de proyectos utilizando Node.js y NPM, aplicando el framework Front-End React.",
+            "Diseño y desarrollo de interfaces de usuario (UX/UI) modernas y responsivas con TailwindCSS.",
+            "Implementación de componentes reutilizables y escalables para mejorar la eficiencia del desarrollo.",
+            "Integración y consumo de API REST utilizando Axios y Fetch para asegurar una comunicación eficiente entre el Front-End y el Back-End.",
+            "Adaptación de diseños responsivos para asegurar una experiencia de usuario óptima en dispositivos móviles.",
+            "Gestión y uso avanzado de librerías de NPM para optimizar y mejorar el proceso de desarrollo.",
+            "Apoyo en el desarrollo de un proyecto adicional utilizando Angular para la gestión de eventos de calendario, mejorando la funcionalidad y la experiencia del usuario en la aplicación.",
+            "Gestión de control de versiones utilizando GitHub y SVN para el seguimiento y colaboración en el desarrollo de proyectos.",
+            "Implementación de contenedores Docker para facilitar el despliegue y la administración de aplicaciones en entornos de producción.",
+            "Trabajo en un entorno mayoritariamente angloparlante, demostrando fluidez en inglés para la comunicación efectiva con el equipo."
         ]
     },
     {
@@ -38,7 +44,10 @@ const experiences = [
 
 export default function Experience() {
     return (
-        <div className="ml-8 md:mx-20 ">
+        <div className="mx-4 md:mx-20 mt-10">
+             <div className="flex justify-center items-center mx-4 sm:mx-10 md:mx-20 mt-10">
+                <p className="text-lg sm:text-xl md:text-2xl text-white font-bold  animate-slide-in-from-left ">MI EXPERIENCIA PROFESIONAL</p>
+            </div>
             {experiences.map(experience => (
                 <div key={experience.id} className="bg-white/20 rounded-md m-2 p-2 shadow-md animate-slide-in-from-left mb-4">
                     <p className="relative m-2 p-2 text-white text-xl font-bold">
@@ -51,7 +60,7 @@ export default function Experience() {
                         {experience.position}
                     </p>
                     <div className="relative m-2 p-2 text-white">
-                        <ul className="list-disc pl-5 text-sm">
+                        <ul className="list-disc pl-5 text-sm space-y-2">
                             {experience.responsibilities.map((responsibility, index) => (
                                 <li key={index}>{responsibility}</li>
                             ))}

@@ -17,3 +17,7 @@ body {
     background-color: #071018;
     font-family: Montserrat;
 }
+
+.appear-hidden {
+    display: none;
+}
