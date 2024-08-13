@@ -1,20 +1,20 @@
 const projects = [
-    {
-        id: 1,
-        company: "SIGAP | TecnoMTY",
-        date: "2023",
-        position: "Desarrollador web full stack",
-        responsibilities: [
-            "Lideré el proyecto y el equipo de desarrollo utilizando Laravel 9 con PHP 8.1.",
-            "Modelé la base de datos con diagramas entidad-relación.",
-            "Implementé modelos, vistas y controladores para el sistema.",
-            "Desarrollé el registro e inicio de sesión de usuarios.",
-            "Creé migraciones para la base de datos MySQL según el modelo entidad-relación.",
-            "Desarrollé la lógica del back-end para el registro de huéspedes.",
-            "Configuré rutas y seguridad con middlewares.",
-            "Implementé el front-end usando HTML5, CSS3, JavaScript y Bootstrap."
-        ]
-    },
+    // {
+    //     id: 1,
+    //     company: "SIGAP | TecnoMTY",
+    //     date: "2023",
+    //     position: "Desarrollador web full stack",
+    //     responsibilities: [
+    //         "Lideré el proyecto y el equipo de desarrollo utilizando Laravel 9 con PHP 8.1.",
+    //         "Modelé la base de datos con diagramas entidad-relación.",
+    //         "Implementé modelos, vistas y controladores para el sistema.",
+    //         "Desarrollé el registro e inicio de sesión de usuarios.",
+    //         "Creé migraciones para la base de datos MySQL según el modelo entidad-relación.",
+    //         "Desarrollé la lógica del back-end para el registro de huéspedes.",
+    //         "Configuré rutas y seguridad con middlewares.",
+    //         "Implementé el front-end usando HTML5, CSS3, JavaScript y Bootstrap."
+    //     ]
+    // },
     {
         id: 3,
         company: "HotelGES",
